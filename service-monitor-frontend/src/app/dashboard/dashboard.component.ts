@@ -22,7 +22,6 @@ export class DashboardComponent implements OnInit {
     this.api.getHealth().subscribe(data => {
       this.health = (data || []).sort((a, b) => (a.environment || '').localeCompare(b.environment || ''));
     });
-    this.api.getSummary().subscribe(txt => this.summary = txt);
   }
 
   statusClass(h: ServiceHealth) {

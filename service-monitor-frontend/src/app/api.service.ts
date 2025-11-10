@@ -25,8 +25,4 @@ export class ApiService {
   getHealth(): Observable<ServiceHealth[]> {
     return this.http.get<ServiceHealth[]>(`${this.baseUrl}/health`);
   }
-
-  getSummary(): Observable<string> {
-    return this.http.get(`${this.baseUrl}/summary`, { responseType: 'text' });
-  }
 }
