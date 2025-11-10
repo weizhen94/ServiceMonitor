@@ -1,0 +1,11 @@
+[ {
+  "name" : "payment-service",
+  "url" : "http://localhost:9002/actuator/info",
+  "environment" : "prod",
+  "up" : false,
+  "latencyMs" : 0,
+  "expectedVersion" : "2.1.0",
+  "actualVersion" : null,
+  "versionDrift" : false,
+  "consecutiveFailures" : 1,
+  "lastCheckedAt"

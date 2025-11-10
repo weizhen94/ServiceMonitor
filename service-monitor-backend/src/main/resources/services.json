@@ -1,0 +1,14 @@
+[
+  {
+    "name": "user-service",
+    "url": "http://localhost:9001/actuator/info",
+    "expectedVersion": "1.0.0",
+    "environment": "dev"
+  },
+  {
+    "name": "payment-service",
+    "url": "http://localhost:9002/actuator/info",
+    "expectedVersion": "2.1.0",
+    "environment": "prod"
+  }
+]
