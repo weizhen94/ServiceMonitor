@@ -1,3 +1,6 @@
+
+<img width="902" height="231" alt="Screenshot 2025-11-11 at 12 49 38 AM" src="https://github.com/user-attachments/assets/4be08e6d-f99f-45cc-965c-09eb88c71966" />
+
 1. Quickstart instructions:
 
 - For backend: (cd into service-monitor-backend)
