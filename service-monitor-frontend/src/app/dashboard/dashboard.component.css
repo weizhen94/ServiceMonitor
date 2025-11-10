@@ -1,0 +1,9 @@
+.container { max-width: 1000px; margin: 24px auto; }
+.summary { background: #eef6ff; border: 1px solid #cfe3ff; padding: 12px; border-radius: 6px; margin: 12px 0; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border: 1px solid #ddd; padding: 8px; }
+.status { padding: 2px 8px; border-radius: 12px; color: #fff; }
+.status.up { background: #28a745; }
+.status.down { background: #dc3545; }
+.drift { color: #dc3545; font-weight: 600; }
+.empty { color: #666; font-style: italic; }

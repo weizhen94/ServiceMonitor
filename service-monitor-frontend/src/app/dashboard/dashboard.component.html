@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Service Health Dashboard</h2>
+
+  <div class="summary" *ngIf="summary">{{ summary }}</div>
+
+  <table class="table" *ngIf="health.length">
+    <thead>
+      <tr>
+        <th>Environment</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Latency (ms)</th>
+        <th>Actual</th>
+        <th>Expected</th>
+        <th>Drift</th>
+        <th>Last Checked</th>
+        <th>Consecutive Failures</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let h of health">
+        <td>{{ h.environment }}</td>
+        <td>{{ h.name }}</td>
+        <td><span [class]="statusClass(h)">{{ h.up ? 'UP' : 'DOWN' }}</span></td>
+        <td>{{ h.latencyMs }}</td>
+        <td>{{ h.actualVersion || '-' }}</td>
+        <td>{{ h.expectedVersion || '-' }}</td>
+        <td [class.drift]="h.versionDrift">{{ driftLabel(h) }}</td>
+        <td>{{ h.lastCheckedAt | date:'short' }}</td>
+        <td>{{ h.consecutiveFailures }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!health.length" class="empty">No data yet. Wait 30s or click refresh in your browser.</div>
+</div>

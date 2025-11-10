@@ -3,21 +3,21 @@
   "url" : "http://localhost:9001/actuator/info",
   "environment" : "dev",
   "up" : false,
-  "latencyMs" : 2,
+  "latencyMs" : 3,
   "expectedVersion" : "1.0.0",
   "actualVersion" : null,
   "versionDrift" : false,
-  "consecutiveFailures" : 5,
-  "lastCheckedAt" : "2025-11-10T14:06:44.453767Z"
+  "consecutiveFailures" : 24,
+  "lastCheckedAt" : "2025-11-10T15:40:34.695963Z"
 }, {
   "name" : "payment-service",
   "url" : "http://localhost:9002/actuator/info",
   "environment" : "prod",
   "up" : false,
-  "latencyMs" : 0,
+  "latencyMs" : 1,
   "expectedVersion" : "2.1.0",
   "actualVersion" : null,
   "versionDrift" : false,
-  "consecutiveFailures" : 5,
-  "lastCheckedAt" : "2025-11-10T14:06:44.460253Z"
+  "consecutiveFailures" : 24,
+  "lastCheckedAt" : "2025-11-10T15:40:34.703424Z"
 } ]
